@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-playground-CFG/static/css/main.073c9b0a.css",
+    "main.js": "/react-playground-CFG/static/js/main.cee55f37.js",
+    "static/js/787.4880d76a.chunk.js": "/react-playground-CFG/static/js/787.4880d76a.chunk.js",
+    "index.html": "/react-playground-CFG/index.html",
+    "main.073c9b0a.css.map": "/react-playground-CFG/static/css/main.073c9b0a.css.map",
+    "main.cee55f37.js.map": "/react-playground-CFG/static/js/main.cee55f37.js.map",
+    "787.4880d76a.chunk.js.map": "/react-playground-CFG/static/js/787.4880d76a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.cee55f37.js"
+  ]
+}
