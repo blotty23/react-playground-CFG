@@ -1,10 +1,6 @@
-const Button = ({message = "I'm the default message"}) => {
-    const clicked = () => {
-        console.log("you clicked me!")
-    }
-
+const Button = ({message = "I'm the default message", setShowPage, showPage}) => {
     return (
-        <button className="button" onClick={clicked}>
+        <button className="button" onClick={()=>setShowPage(showPage)}>
             <h2 className='button__text'> 
             {message}
             </h2>

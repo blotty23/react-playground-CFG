@@ -1,39 +1,27 @@
 import "./App.css";
-import { Welcome, FunctionalWelcome } from "./Components/Welcome";
-import ButtonClicker from "./Components/ButtonClicker";
-import IncrementButton from "./Components/IncrementButton";
-import IncrementButtonWithState from "./Components/IncrementButtonWithState";
-import FunctionalIncrementButton from "./Components/FunctionalIncrementButtonWithState";
-import FunctionalButtonClicker from "./Components/FunctionalButtonClicker";
 import Button from "./Components/Button";
-
-const myName = "Emma";
+import { Homepage } from "./Components/Homepage";
+import { Gallery } from "./Components/Gallery";
+import { useState } from "react";
 
 function App() {
+  const [showPage, setShowPage] = useState("homepage");
+
   return (
     <div className="App">
       <header className="App-header">
-        <Welcome name={myName} />
-        <br />
-        <FunctionalWelcome name={"Sophie"} />
-        <br />
-        <Button message={"MESSAGE GIVEN AS PROPS"} />
-        <br />
-        <br />
-
-        <IncrementButton />
-        <br />
-        <IncrementButtonWithState />
-        <br />
-        <FunctionalIncrementButton />
-        <br />
-
-
-        <br />
-        <ButtonClicker name={myName} />
-        <br />
-        <FunctionalButtonClicker name={myName} />
-        <br />
+        <Button
+          message="show homepage"
+          showPage={"homepage"}
+          setShowPage={setShowPage}
+        />
+        <Button
+          message="show gallery"
+          showPage={"gallery"}
+          setShowPage={setShowPage}
+        />
+        {showPage === "homepage" && <Homepage />}
+        {showPage === "gallery" && <Gallery />}
       </header>
     </div>
   );
